@@ -34,13 +34,13 @@ const Header = () => {
                 to="/cliente"
                 className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
               >
-                Cliente View
+                Cliente
               </Link>
               <Link
                 to="/admin"
                 className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
               >
-                Admin View
+                Admin
               </Link>
             </nav>
             {/* nav - end */}

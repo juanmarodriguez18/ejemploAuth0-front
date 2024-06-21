@@ -23,20 +23,17 @@ const Home = () => {
 
   return (
     <div className="flex flex-col items-center justify-center mx-96">
-      <h1 className="mb-4 text-2xl font-bold">Esta es la pagina de inicio.</h1>
+      <h1 className="mb-4 text-2xl font-bold">Home.</h1>
       <div className="px-6 mb-4 text-justify">
-        Este proyecto utiliza el sdk de Auth0 para administrar login, logout y
-        registro de usuario, ademas de aplicar validaciones de permisos tanto
-        para las rutas establecidad en con react-router-dom como en las
-        peticiones que se realizaran a una API Rest hecha con Spring Boot.
+        Proyecto de Ejemplo para utilización de Auth0.
       </div>
       {isAuthenticated ? (
         <div className="font-semibold text-green-500">
-          Has iniciado sesion como {user?.name}{" "}
+         Iniciado sesion como {user?.name}{" "}
         </div>
       ) : (
         <div className="font-semibold text-red-500">
-          Actualmente no has iniciado sesion
+         No has iniciado sesión.
         </div>
       )}
       <div className="mt-4">
@@ -44,7 +41,7 @@ const Home = () => {
           onClick={callApi}
           className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700"
         >
-          Call Public API
+          Public API
         </button>
       </div>
     </div>
